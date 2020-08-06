@@ -12,7 +12,6 @@ function addEventListeners() {
   const settings = JSON.parse(localStorage.getItem('settings'));
   const modeElement = document.querySelector('label[switch] input');
   modeElement.addEventListener('change', e => {
-    console.log('yup');
     settings.mode = e.target.checked ? 'dark' : '';
     localStorage.setItem('settings', JSON.stringify(settings));
     document.documentElement.setAttribute('mode', settings.mode);
