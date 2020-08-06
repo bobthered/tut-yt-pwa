@@ -1,13 +1,28 @@
 import './news-article.js';
-import { topHeadlinesUrl } from './newsApi.js';
 
 window.addEventListener('load', () => {
+  addEventListeners();
   fetchNews();
   registerSW();
 });
 
+function addEventListeners() {
+  if (!localStorage.getItem('settings'))
+    localStorage.setItem('settings', JSON.stringify({ mode: '' }));
+  const settings = JSON.parse(localStorage.getItem('settings'));
+  const modeElement = document.querySelector('label[switch] input');
+  modeElement.addEventListener('change', e => {
+    console.log('yup');
+    settings.mode = e.target.checked ? 'dark' : '';
+    localStorage.setItem('settings', JSON.stringify(settings));
+    document.documentElement.setAttribute('mode', settings.mode);
+  });
+  modeElement.checked = settings.mode === 'dark' ? true : false;
+  modeElement.dispatchEvent(new Event('change'));
+}
+
 async function fetchNews() {
-  const res = await fetch(topHeadlinesUrl);
+  const res = await fetch('http://localhost:5500/topHeadlines');
   const json = await res.json();
 
   const main = document.querySelector('main');
