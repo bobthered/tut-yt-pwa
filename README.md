@@ -4,8 +4,8 @@
 
 ## Youtube Links
 
-1. [https://www.youtube.com/watch?v=mTNdTcwK3MM&t=8s](Build an app with WebComponents in 9 minutes)
-2. [https://www.youtube.com/watch?v=E8BeSSdIUW4](Turn a web app into a PWA in 10 minutes)
+1. [Build an app with WebComponents in 9 minutes](https://www.youtube.com/watch?v=mTNdTcwK3MM&t=8s)
+2. [Turn a web app into a PWA in 10 minutes](https://www.youtube.com/watch?v=E8BeSSdIUW4)
 
 ## Modifications
 
