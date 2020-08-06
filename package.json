@@ -1,0 +1,26 @@
+{
+  "name": "tut-yt-pwa",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/bobthered/tut-yt-pwa.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/bobthered/tut-yt-pwa/issues"
+  },
+  "homepage": "https://github.com/bobthered/tut-yt-pwa#readme",
+  "devDependencies": {
+    "eslint": "^7.6.0"
+  },
+  "dependencies": {
+    "dotenv": "^8.2.0"
+  }
+}
